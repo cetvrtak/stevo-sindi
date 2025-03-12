@@ -2,9 +2,9 @@
   "name": "stevo-sindi",
   "version": "1.0.0",
   "description": "Sifarnik voca i povrca",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "live-server --port=3000 --entry-file=index.html",
+    "build": "echo 'No build step required for static HTML'"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/cetvrtak/stevo-sindi/issues"
   },
-  "homepage": "https://github.com/cetvrtak/stevo-sindi#readme"
+  "homepage": "https://github.com/cetvrtak/stevo-sindi#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
 }
