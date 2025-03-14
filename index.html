@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kviz - Kodovi Vo?a i Povr?a</title>
+    <title>Kviz - Kodovi Voća i Povrća</title>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
       body {
@@ -52,10 +52,10 @@
     </style>
   </head>
   <body>
-    <h1>Kviz - Kodovi Vo?a i Povr?a</h1>
+    <h1>Kviz - Kodovi Voća i Povrća</h1>
     <div class="quiz-container">
       <div id="score">Rezultat: 0/0</div>
-      <div class="question" id="question">U?itavanje pitanja...</div>
+      <div class="question" id="question">Učitavanje pitanja...</div>
       <div class="options" id="options"></div>
     </div>
 
@@ -88,7 +88,7 @@
           quizData = [...fruits, ...vegetables];
           startQuiz();
         } catch (error) {
-          console.error('Gre�ka pri u?itavanju podataka: ', error);
+          console.error('Greška pri učitavanju podataka: ', error);
         }
       }
 
@@ -102,8 +102,9 @@
         if (currentQuestionIndex >= quizData.length) {
           document.getElementById(
             'question'
-          ).innerText = `Kviz zavr�en! Va� rezultat: ${score}/${quizData.length}`;
+          ).innerText = `Kviz završen! Vaš rezultat: ${score}/${quizData.length}`;
           document.getElementById('options').innerHTML = '';
+          document.getElementById('score').innerHTML = '';
           return;
         }
 
